@@ -1,0 +1,245 @@
+/*
+Theme Name: One
+Theme URI: https://wordpress.org/themes/themeOne/
+Author: Shuvo Sarker
+Author URI: https://shuvom.com/
+Description: One theme brings your site to life with immersive featured images and subtle animations. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: one
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  font-family: "Roboto", sans-serif;
+}
+p {
+  font-size: 16px !important;
+  line-height: 25px !important;
+  color: #668 !important;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+/* Main Body Structure */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #067092;
+}
+
+/* Site Header */
+header.main-header {
+  border-bottom: 1px solid #067092;
+  padding-top: 20px;
+}
+header.main-header h1 a {
+  color: #067092;
+  text-decoration: none;
+}
+header.main-header h1 {
+  margin: 0;
+}
+header.main-header h3 {
+  font-style: italic;
+  margin-top: 0;
+}
+/* Search Form */
+form#searchform {
+  margin-top: 40px;
+}
+label.screen-reader-text {
+  display: none;
+}
+
+input#s {
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 1px solid #06709255;
+}
+
+input#searchsubmit {
+  background: #067092;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Site Navigation */
+.main-header nav {
+  margin-top: 30px;
+}
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+}
+.main-menu ul:before,
+.main-menu ul:after {
+  content: "";
+  display: table;
+}
+.main-menu ul:after {
+  clear: both;
+}
+.main-menu ul li {
+  list-style: none;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+.main-menu ul li a {
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  border: 1px solid #067092;
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
+  color: #000;
+}
+.main-menu ul li a:hover {
+  background: #067092;
+  color: #fff;
+}
+.main-menu ul li.current-menu-item a {
+  background: #067092 !important;
+  color: #fff !important;
+}
+/*Site Content*/
+
+.left_content {
+  float: left;
+  width: 65%;
+  margin-right: 1%;
+}
+.content_wrapper > .clear {
+  clear: both;
+  line-height: 0;
+}
+.readmore {
+  text-decoration: none;
+  color: red;
+  padding: 0 5px;
+}
+/* Site Sidebar */
+
+.sidebar {
+  float: right;
+  width: 33%;
+  border: 1px solid #ddd;
+}
+.single-sidebar {
+  margin: 0 20px;
+  padding: 0 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.single-sidebar:last-of-type {
+  border-bottom: none;
+}
+/* Site Footer */
+.footer-widgets {
+  overflow: hidden;
+}
+.f-widget {
+  width: 25%;
+  float: left;
+}
+.f-widget h3 {
+  border-left: 2px solid #067092;
+  padding-left: 15px;
+}
+.site-footer {
+  margin: 10px 0;
+  border-top: 1px solid #067092;
+  padding-top: 10px;
+}
+.site-footer > p {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.site-footer p a {
+  color: #067092;
+  text-decoration: none;
+}
+.single-posts {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 50px !important;
+}
+.post_thumbnails img {
+  width: 100% !important;
+  height: 40% !important;
+  max-width: 100% !important;
+}
+.post_meta {
+  padding: 10px 25px;
+  border: 1px solid #ddd;
+  margin-top: 15px;
+}
+article.single_page p img {
+  width: 100% !important;
+  height: 80%;
+}
+.main_pagination {
+  overflow: hidden !important;
+}
+
+.old_post {
+  float: right !important;
+}
+
+.new_post {
+  float: left !important;
+}
+#footer_nav {
+  float: right;
+}
+#footer_nav ul {
+  margin: 0;
+  padding: 0;
+}
+#footer_nav ul li {
+  float: left;
+  list-style: none;
+  padding: 1px 20px;
+  border-right: 1px solid #ddd;
+}
+#footer_nav ul li:last-child {
+  border-right: none;
+}
+#footer_nav ul li a {
+  color: #2c7092;
+  text-decoration: none;
+}
+/*
+	Tutorial By- http://ITBari.com, All Rights Reserved
+*/
